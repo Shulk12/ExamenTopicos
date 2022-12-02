@@ -1,0 +1,171 @@
+C:\Users\brand>cd C:\Users\brand\OneDrive\Escritorio\examen
+
+C:\Users\brand\OneDrive\Escritorio\examen>git init
+Initialized empty Git repository in C:/Users/brand/OneDrive/Escritorio/examen/.git/
+
+C:\Users\brand\OneDrive\Escritorio\examen>git add Readme.MD
+
+C:\Users\brand\OneDrive\Escritorio\examen>git commit -m "Añadir Readme"
+[master (root-commit) f579280] Añadir Readme
+ 1 file changed, 9 insertions(+)
+ create mode 100644 Readme.MD
+
+C:\Users\brand\OneDrive\Escritorio\examen>git add BD_Python
+
+C:\Users\brand\OneDrive\Escritorio\examen>git commit -m "Proyecto añadido"
+[master 79248e1] Proyecto añadido
+ 2 files changed, 161 insertions(+)
+ create mode 100644 BD_Python/base_datos.py
+ create mode 100644 BD_Python/examen.py
+
+C:\Users\brand\OneDrive\Escritorio\examen>git add unidad5
+
+C:\Users\brand\OneDrive\Escritorio\examen>git commit -m "unidad5 añadida"
+[master af27f50] unidad5 añadida
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 unidad5/.gitkeep
+
+C:\Users\brand\OneDrive\Escritorio\examen>git add brandon_vargas.19550720
+
+C:\Users\brand\OneDrive\Escritorio\examen>git commit -m "Brandon"
+[master 5c96488] Brandon
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 brandon_vargas.19550720
+
+C:\Users\brand\OneDrive\Escritorio\examen>git add reprobados.py
+fatal: pathspec 'reprobados.py' did not match any files
+
+C:\Users\brand\OneDrive\Escritorio\examen>git commit -m "Reprobados borrado"
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\brand\OneDrive\Escritorio\examen>git add aprobados.py
+
+C:\Users\brand\OneDrive\Escritorio\examen>git commit -m "aprobados añadido"
+[master 7d80a71] aprobados añadido
+ 1 file changed, 1 insertion(+)
+ create mode 100644 aprobados.py
+
+C:\Users\brand\OneDrive\Escritorio\examen>git branch reprobados
+
+C:\Users\brand\OneDrive\Escritorio\examen>git checkout reprobados
+Switched to branch 'reprobados'
+
+C:\Users\brand\OneDrive\Escritorio\examen>git add MUNDIAL
+
+C:\Users\brand\OneDrive\Escritorio\examen>git commit -m "CR7"
+[reprobados d1db070] CR7
+ 1 file changed, 1 insertion(+)
+ create mode 100644 MUNDIAL/bicho.cr7
+
+C:\Users\brand\OneDrive\Escritorio\examen>git reflog
+d1db070 (HEAD -> reprobados) HEAD@{0}: commit: CR7
+7d80a71 (master) HEAD@{1}: checkout: moving from master to reprobados
+7d80a71 (master) HEAD@{2}: commit: aprobados añadido
+5c96488 HEAD@{3}: commit: Brandon
+af27f50 HEAD@{4}: commit: unidad5 añadida
+79248e1 HEAD@{5}: commit: Proyecto añadido
+f579280 HEAD@{6}: commit (initial): Añadir Readme
+
+C:\Users\brand\OneDrive\Escritorio\examen>git reset --soft af27f50
+
+C:\Users\brand\OneDrive\Escritorio\examen>git reflog
+af27f50 (HEAD -> reprobados) HEAD@{0}: reset: moving to af27f50
+d1db070 HEAD@{1}: commit: CR7
+7d80a71 (master) HEAD@{2}: checkout: moving from master to reprobados
+7d80a71 (master) HEAD@{3}: commit: aprobados añadido
+5c96488 HEAD@{4}: commit: Brandon
+af27f50 (HEAD -> reprobados) HEAD@{5}: commit: unidad5 añadida
+79248e1 HEAD@{6}: commit: Proyecto añadido
+f579280 HEAD@{7}: commit (initial): Añadir Readme
+
+C:\Users\brand\OneDrive\Escritorio\examen>git checkout master
+Switched to branch 'master'
+A       MUNDIAL/bicho.cr7
+
+C:\Users\brand\OneDrive\Escritorio\examen>git checkout reprobados
+Switched to branch 'reprobados'
+A       MUNDIAL/bicho.cr7
+
+C:\Users\brand\OneDrive\Escritorio\examen>git commit -m "NUEVOS CAMBIOS"
+[reprobados 45fb36e] NUEVOS CAMBIOS
+ 1 file changed, 1 insertion(+)
+ create mode 100644 MUNDIAL/bicho.cr7
+
+C:\Users\brand\OneDrive\Escritorio\examen>git checkout master
+Updating files: 100% (3/3), done.
+Switched to branch 'master'
+
+C:\Users\brand\OneDrive\Escritorio\examen>git add Metodos.pptx
+
+C:\Users\brand\OneDrive\Escritorio\examen>git commit -m "Presentacion"
+[master 6a2b7db] Presentacion
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Metodos.pptx
+
+C:\Users\brand\OneDrive\Escritorio\examen>git add Readme.MD
+
+C:\Users\brand\OneDrive\Escritorio\examen>git commit -m "Nuevo Readme"
+[master 75787db] Nuevo Readme
+ 1 file changed, 13 insertions(+), 1 deletion(-)
+
+C:\Users\brand\OneDrive\Escritorio\examen>git reflog
+75787db (HEAD -> master) HEAD@{0}: commit: Nuevo Readme
+6a2b7db HEAD@{1}: commit: Presentacion
+7d80a71 HEAD@{2}: checkout: moving from reprobados to master
+45fb36e (reprobados) HEAD@{3}: commit: NUEVOS CAMBIOS
+af27f50 HEAD@{4}: checkout: moving from master to reprobados
+7d80a71 HEAD@{5}: checkout: moving from reprobados to master
+af27f50 HEAD@{6}: reset: moving to af27f50
+d1db070 HEAD@{7}: commit: CR7
+7d80a71 HEAD@{8}: checkout: moving from master to reprobados
+7d80a71 HEAD@{9}: commit: aprobados añadido
+5c96488 HEAD@{10}: commit: Brandon
+af27f50 HEAD@{11}: commit: unidad5 añadida
+79248e1 HEAD@{12}: commit: Proyecto añadido
+f579280 HEAD@{13}: commit (initial): Añadir Readme
+
+C:\Users\brand\OneDrive\Escritorio\examen>git reset --soft 6a2b7db
+
+C:\Users\brand\OneDrive\Escritorio\examen>git reflo
+git: 'reflo' is not a git command. See 'git --help'.
+
+The most similar command is
+        reflog
+
+C:\Users\brand\OneDrive\Escritorio\examen>git reflog
+6a2b7db (HEAD -> master) HEAD@{0}: reset: moving to 6a2b7db
+75787db HEAD@{1}: commit: Nuevo Readme
+6a2b7db (HEAD -> master) HEAD@{2}: commit: Presentacion
+7d80a71 HEAD@{3}: checkout: moving from reprobados to master
+45fb36e (reprobados) HEAD@{4}: commit: NUEVOS CAMBIOS
+af27f50 HEAD@{5}: checkout: moving from master to reprobados
+7d80a71 HEAD@{6}: checkout: moving from reprobados to master
+af27f50 HEAD@{7}: reset: moving to af27f50
+d1db070 HEAD@{8}: commit: CR7
+7d80a71 HEAD@{9}: checkout: moving from master to reprobados
+7d80a71 HEAD@{10}: commit: aprobados añadido
+5c96488 HEAD@{11}: commit: Brandon
+af27f50 HEAD@{12}: commit: unidad5 añadida
+79248e1 HEAD@{13}: commit: Proyecto añadido
+f579280 HEAD@{14}: commit (initial): Añadir Readme
+
+C:\Users\brand\OneDrive\Escritorio\examen>git commit -m "VIERNESITO"
+[master cc2346a] VIERNESITO
+ 1 file changed, 13 insertions(+), 1 deletion(-)
+
+C:\Users\brand\OneDrive\Escritorio\examen>git merge reprobados
+Merge made by the 'ort' strategy.
+ MUNDIAL/bicho.cr7 | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 MUNDIAL/bicho.cr7
+
+C:\Users\brand\OneDrive\Escritorio\examen>git add nuevo.1 nuevo.2
+
+C:\Users\brand\OneDrive\Escritorio\examen>git commit -m "Nuevos/Paso18"
+[master 6188962] Nuevos/Paso18
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 nuevo.1
+ create mode 100644 nuevo.2
+
+C:\Users\brand\OneDrive\Escritorio\examen>
